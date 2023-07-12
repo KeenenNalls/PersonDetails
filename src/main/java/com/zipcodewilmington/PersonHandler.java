@@ -16,9 +16,17 @@ public class PersonHandler {
     public String whileLoop() {
         String result = "";
         // create a `counter`
+        int counter = 0;
+        // create a `counter`
         // while `counter` is less than length of array
+        while (counter < personArray.length){
             // begin loop
+            Person currentPerson = personArray[counter];
+            String stringRepresentation = currentPerson.toString();
+            result += stringRepresentation;
+            counter++;
 
+        }
                 // use `counter` to identify the `current Person` in the array
                 // get `string Representation` of `currentPerson`
                 // append `stringRepresentation` to `result` variable
